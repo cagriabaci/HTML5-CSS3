@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST"> <!-- ONEMLİ NOT:
+        BASLANGIC METODU HER ZAMAN 'GET' DIR. GUVENLIK SEBEBI İLE FORMUN
+    GONDERILMESI GEREKN METOD POST OLMALIDIR. AKSI HALDE GET METODUNDA GIRILEN BILGILER URL DE GORUNUR.-->
+        İsim: <input type="text" name="İsim" id="İsim" placeholder="İsminizi Giriniz">
+        <br><br>
+        Soyisim: <input type="text" name="Soyisim" id="Soyisim" placeholder="Soyisminizi Giriniz">
+        <br><br>
+        Sevdiğiniz Spor: <input type="checkbox" name="Futbol" id="Futbol">Futbol
+        <input type="checkbox" name="Voleybol" id="Voleybol">Voleybol
+        <input type="checkbox" name="Basketbol" id="Basketbol">Basketbol
+        <br><br>
+        Cinsiyet: <input type="radio" name="gender" id="radioErkek" value="Erkek">Erkek
+        <input type="radio" name="gender" id="radioKadın" value="Kadın">Kadın
+        <br><br>
+        Güvenlik Sorusu: Türkiyenin Başkenti Neresidir?
+        <br><br>
+        <select name="Güvenlik Sorusu" id="Güvenlik Sorusu">
+            <option value="bos">Lütfen Bir Şehir Seçiniz</option>
+            <option value="Ankara">Ankara</option>
+            <option value="İstanbul">İstanbul</option>
+            <option value="Bursa">Bursa</option>
+        </select>
+        <br><br>
+        <input type="submit" value="Kayıt Ol">
+
+        
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 500px;
+            height: 500px;
+            background-color: aqua;
+            color:black;
+            padding: 50px;
+            border: 5px solid black; /*div'in totalde 500'e 500 olmasını istiyoruz ama padding ve border verdiğimizde
+            620'ye 620 şeklinde oluşuyor. padding ve border ın da 500 e dahil olması içib box-sizing kullanıyoruz. eğer kullanmazsak
+            zaten defaultta content-box olarak geliyor.*/
+            box-sizing: border-box;
+        }
+        p{
+            line-height: 4;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        BAŞLIK 
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing.
+            Lorem ipsum, dolor sit amet consectetur adipisicing.
+            Lorem ipsum, dolor sit amet consectetur adipisicing.
+            Lorem ipsum, dolor sit amet consectetur adipisicing.
+            Lorem ipsum, dolor sit amet consectetur adipisicing.
+            Lorem ipsum, dolor sit amet consectetur adipisicing.
+          
+        </p>
+    </div>
+</body>
+</html>

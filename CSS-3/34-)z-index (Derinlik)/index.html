@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .green{
+            background-color: green;
+            z-index:2; /*z-index kullanmak istiyorsak kullanmak istediğimiz html elemanının pozisyonu ya relative
+            ya absolute ya da fixed olası gerek.*/
+            position: relative;
+        }
+        .red{
+            background-color: red;
+            z-index: 1;
+            position: relative;
+            margin-top: -50px;
+            margin-left:50px;
+        }
+        .pink{
+            position: fixed;
+            z-index: 3;
+            background-color:hotpink;
+            top: 80;
+            left:100px;
+            
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="green"></div>
+    <div class="red"></div>
+    <div class="pink"></div>
+</body>
+</html>
